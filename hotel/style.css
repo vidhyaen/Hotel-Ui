@@ -1,0 +1,317 @@
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+    font-size: 110%;
+    font-weight: 800;
+    text-transform: uppercase;
+    outline: none;
+}
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: #1c1c1c;
+    -webkit-transition: width .4s ease-in-out;
+    -moz-transition: width .4s ease-in-out;
+    -ms-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+.sidebar-nav li:first-child a {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+.sidebar-nav li:nth-child(2):before {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+.sidebar-nav li:nth-child(3):before {
+    background-color: #ec1b5a;
+}
+.sidebar-nav li:nth-child(4):before {
+    background-color: #79aefe;
+}
+.sidebar-nav li:nth-child(5):before {
+    background-color: #314190;
+}
+.sidebar-nav li:nth-child(6):before {
+    background-color: #279636;
+}
+.sidebar-nav li:nth-child(7):before {
+    background-color: #7d5d81;
+}
+.sidebar-nav li:nth-child(8):before {
+    background-color: #ead24c;
+}
+.sidebar-nav li:nth-child(9):before {
+    background-color: #2d2366;
+}
+.sidebar-nav li:nth-child(10):before {
+    background-color: #35acdf;
+}
+.sidebar-nav li:hover:before, .sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .4s ease-in-out;
+    -moz-transition: width .4s ease-in-out;
+    -ms-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+.sidebar-nav li a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;
+}
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.sidebar-nav > .sidebar-brand {
+    height: 44px;
+    font-size: 18px;
+    line-height: 1.43;
+}
+.sidebar-nav .dropdown-menu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #222;
+    box-shadow: none;
+}
+#menu-toggle {
+    z-index: 801;
+    position: fixed;
+    top: 0;
+    right: 15px;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+/*!
+ * Soldier-up Designs - Soldier-up Designs Custom Bootstrap Accordion Form (https://soldierupdesigns.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+.accordion{
+    width:50%;
+    position:fixed;
+	bottom:0;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+
+
+.accordion label{
+	color:#fff;
+}
+.accordion input{
+	border-radius:0;
+}
+
+
+
+.accordion-toggle{
+	text-align:center;
+}
+
+.accordion-toggle span:after{
+    /* symbol for "opening" panels */
+	font-family: 'FontAwesome';
+	/* essential for enabling glyphicon */
+	content:"\f078";
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:5%;
+	color: white;
+	text-align:right;
+	float:right;
+	vertical-align:middle;
+	margin-top:0;
+	font-weight:700;
+	font-size:120%;
+}
+
+.collapsed span:after{
+	/* symbol for "collapsed" panels */
+	content:"\f077";	
+}
+
+
+
+@media(min-width: 768px){
+	.contact-panel{
+		width:50%;
+	}
+}
+
+.social {
+    z-index: 801;
+    position: fixed;
+    top: .5%;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%}
+.social ul {
+    /* background: #222; */
+    padding: 0;
+}
+.social ul li {
+    list-style: none outside none;
+    display: block;
+    /* background: #222; */
+    width:100%;
+}
+.social>li>a{
+    position: relative;
+    display: block;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+#collapseOne>li>a{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+#collapseOne>li>a:focus,
+#collapseOne>li>a:hover {
+    text-decoration: none;
+   
+}
+.social i {
+    width: 40px;
+    height: 40px;
+    color:black;
+
+    font-size: 22px;
+    text-align: center;
+    padding-top: 12px;
+    /* -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s; */
+}
+
+#social-collapse:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: none;
+    position: relative;
+    color:black;
+}
+#social-collapse.collapsed:after {
+    content: "\f067";
+}
+
+
+
+/* 
+========================
+Social Accordion Styling
+========================
+*/
+.nav > li > a {
+    position: relative;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	text-decoration: none;
+
+}
+/*
+===============================
+Custom Bootstrap Form Styling
+===============================
+*/
+.nav-tabs.nav-justified {
+    border-bottom: 0 none;
+    width: 100%}
+.nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+ .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+       
+        color: white;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+       left: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-right: 50px;
+      }
+
+      #main {
+        transition: margin-right 0.5s;
+        padding: 20px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 35px;
+        }
+        .sidenav a {
+          font-size: 16px;
+        }
+      /* @media screen and (min-width: 450px) {
+        .sidenav {
+          padding-top: 30px;
+        } */
+        .sidenav a {
+          font-size: 18px;
+        }
+      }

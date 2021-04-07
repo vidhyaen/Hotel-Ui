@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c330d3c861.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .chip {
+        display: inline-block;
+        padding: 0 35px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+      }
+      .img1 {
+        background-image: url("https://www.thefeelfabulousproject.co.uk/wp-content/uploads/2019/06/fruit.jpg");
+        background-size: cover;
+        background-repeat: round;
+        height: 300px;
+        width: 400px;
+      }
+      .img2 {
+        background-image: url("https://www.thefeelfabulousproject.co.uk/wp-content/uploads/2019/06/fruit.jpg");
+        background-size: cover;
+        height: 300px;
+        width: 400px;
+      }
+
+      .chip img {
+        float: left;
+        margin: 0 5px 0 -15px;
+        height: 50px;
+        width: 50px;
+        border-radius: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-12 col-md-12 col-sm-12">
+      <!-- header -->
+      <div class="navbar">
+        <header>
+          <div
+            nav
+            class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+          >
+            <h1 class="text-warning m-2">
+              VM<i class="fas fa-concierge-bell" style="color: white"
+                >Restaurant</i
+              >
+            </h1>
+            &nbsp;
+
+            <form class="form-inline ml-5" style="text-align: right">
+                <input type="text" placeholder="search" class="form-control mr-3">
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <div class="dropdown bg-white" data-toggle="dropdown">
+                  <i
+                    class="fas fa-bell text-dark text-center mt-2 btn text-hover-overlay hover-warning"
+                  ></i>
+
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <p class="dropdown-item" href="#">Link 1</p>
+                    <p class="dropdown-item" href="#">Link 2</p>
+                    <p class="dropdown-item" href="#">Link 3</p>
+                  </div>
+                </div>
+              </ul>
+              <div class="chip">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnVcve3YiuC1VJMAPpRKQtVc3uiwzmW5uEA&usqp=CAU"
+                  width="96"
+                  height="96"
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- image -->
+      <div class="mt-5 p-5">
+        <div class="row">
+          <div class="col-6 img1 mt-2"></div>
+          <div class="col-6 img2 mt-2"></div>
+        </div>
+      </div>
+      <!-- filter  -->
+      <!-- Section: Sidebar -->
+      <div class="row">
+        <div
+          class="col-3 ml-5 card card-register bg-dark"
+          style="padding: 0 55px"
+        >
+          <!-- Section: Filters -->
+          <div>
+            <h5 class="text-center text-white mt-3">Filters</h5>
+            <h5 class="text-white mt-3">Items</h5>
+            <div class="mb-4 col-md-4 card-body text-white">
+             
+              <div class="form-check pl-0 mb-3">
+                
+                <input
+                  type="checkbox"
+                  class="form-check-input filled-in"
+                  id="new"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="new"
+                  >New</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input filled-in"
+                  id="used"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="used"
+                  >Used</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input filled-in"
+                  id="collectible"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="collectible"
+                  >Collectible</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3 pb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input filled-in"
+                  id="renewed"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="renewed"
+                  >Renewed</label
+                >
+              </div>
+            </div>
+            <!-- div: Condition -->
+
+            <!-- div: Price -->
+            <div class="text-white">
+             
+                <h5 class="text-white mt-3">Items</h5>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="under25"
+                  name="materialExampleRadios"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="under25"
+                  >Under $25</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="2550"
+                  name="materialExampleRadios"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="2550"
+                  >$25 to $50</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="50100"
+                  name="materialExampleRadios"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="50100"
+                  >$50 to $100</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="100200"
+                  name="materialExampleRadios"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="100200"
+                  >$100 to $200</label
+                >
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="200above"
+                  name="materialExampleRadios"
+                />
+                <label
+                  class="form-check-label small text-uppercase card-link-secondary"
+                  for="200above"
+                  >$200 & Above</label
+                >
+              </div>
+            </div>
+            <!-- div: Price -->
+
+            <!-- div: Price version 2 -->
+          </div>
+        </div>
+
+        <div class="col-8 card card-register ml-3">
+          <div class="row mt-5 ml-3">
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/07/pongal-recipe-500x375.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="product.html" title="View Product"
+                      >Product title</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p class="btn btn-danger btn-block">99.00 $</p>
+                    </div>
+                    <div class="col">
+                      <a href="#" class="btn btn-success btn-block"
+                        >Add to cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://im.idiva.com/content/2021/Jan/3---2021-01-11T153934883_5ffc254a305b0.jpg?w=750&h=582&cc=1"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="product.html" title="View Product"
+                      >Product title</a
+                    >
+                  </h4>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <p class="btn btn-danger btn-block">99.00 $</p>
+                    </div>
+                    <div class="col">
+                      <a href="#" class="btn btn-success btn-block"
+                        >Add to cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="http://3.bp.blogspot.com/-oqJyggX9Kog/UEune2c2CSI/AAAAAAAAF_E/6pNTo58LoY4/s1600/Senai+ennai+kari+%285%29.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="product.html" title="View Product"
+                        >Product title</a
+                      >
+                    </h4>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make
+                      up the bulk of the card's content.
+                    </p>
+                    <div class="row">
+                      <div class="col">
+                        <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                        <a href="#" class="btn btn-success btn-block"
+                          >Add to cart</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Sidebar -->
+    </div>
+  </body>
+</html>
